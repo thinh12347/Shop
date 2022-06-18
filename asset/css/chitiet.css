@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+.chi{
+    max-width: 100%;
+    width: 1200px;
+}
+.header{
+    display:  flex;
+}
+.img{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.header__titile{
+    width: 60%;
+    padding: 10px;
+}
+.header_tieude{
+    font-size:22px;
+    line-height: 26px;
+}
+.gird__colum-2-1{
+    width: 20%;
+}
+.gird__colum-2-55{
+    width: 80%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.gird__colum-2-5{
+    width: 25%;
+}
+.grid_row1{
+    display: flex;
+   
+}
+.futter{
+    display: flex;
+    justify-content: space-evenly;
+}
+.class1{
+    background-color: aquamarine;
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+.class1:nth-child(1){
+    background-color: aqua;
+}
+.class1:nth-child(1){
+    background-color:blue;
+}
+.class1:nth-child(3){
+    background-color:palevioletred;
+}
+/* dt vs mtb */
+@media (max-width: 63.9375em){
+    .header{
+        flex-direction: column-reverse;
+    }
+    .header__titile{
+        width: 100%;
+    }
+    .header_gioithieu{
+        display: none;
+    }
+}
+/* pc */
+@media (min-width: 64em){
+
+}
+/* table */
+@media (min-width: 46.25em ) and (max-width: 63.9375em){
+  
+    .img{
+        width: 85%;
+    }
+  .gird__colum-2-5{
+      width: 33.333%;
+  }
+}
+/* mobile */
+@media (max-width: 46.1875em){
+    .img{
+        width: 95%;
+    }
+    .gird__colum-2-55{
+        width: 100%;
+    }
+    .gird__colum-2-1{
+        display: none;
+    }
+    .gird__colum-2-5{
+        width: 100%;
+        text-align: center;
+    }
+    .futter{
+        display: block;
+    }
+}
